@@ -12,7 +12,7 @@
     "homepage": "https://github.com/crassq/vin",
     "keywords": ["Laravel", "Vin"],
     "require": {
-        "illuminate/support": "~9"
+
     },
     "require-dev": {
     },
