@@ -1,0 +1,41 @@
+{
+    "name": "crassq/vin",
+    "description": "",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Richard Simard",
+            "email": "richard.simard@groupesti.com",
+            "homepage": "https://groupesti.com"
+        }
+    ],
+    "homepage": "https://github.com/crassq/vin",
+    "keywords": ["Laravel", "Vin"],
+    "require": {
+        "illuminate/support": "~9"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Crassq\\Vin\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Crassq\\Vin\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Crassq\\Vin\\VinServiceProvider"
+            ],
+            "aliases": {
+                "Vin": "Crassq\\Vin\\Facades\\Vin"
+            }
+        }
+    }
+}
