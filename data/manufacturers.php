@@ -1,11 +1,4 @@
-<?php declare(strict_types=1);
-
-/**
- * @author Richard Simard <richard.simard@crassq.ca>
- * @copyright Copyright (c) 2025 CRASSQ
- * @license https://github.com/crassq/vin/blob/master/LICENSE
- * @link https://github.com/crassq/vin
- */
+<?php
 
 namespace CRASSQ\Vin;
 
@@ -518,7 +511,7 @@ const MANUFACTURERS = [
     'WB1' => 'BMW Motorrad of North America',
 
     /**
-     * @see https://github.com/crassq/vin/issues/70
+     * @see https://github.com/sunrise-php/vin/issues/70
      */
     'W1K' => 'Mercedes',
     'W1V' => 'Mercedes',
@@ -527,7 +520,7 @@ const MANUFACTURERS = [
     'YAR' => 'Toyota',
 
     /**
-     * @see https://github.com/crassq/vin/issues/76
+     * @see https://github.com/sunrise-php/vin/issues/76
      */
     '7SA' => 'Tesla, Inc.',
     '7G2' => 'Tesla, Inc.',
@@ -536,7 +529,7 @@ const MANUFACTURERS = [
     'SFZ' => 'Tesla, Inc.',
 
     /**
-     * @see https://github.com/crassq/vin/issues/77
+     * @see https://github.com/sunrise-php/vin/issues/77
      */
     '7JR' => 'Volvo Car Usa, Llc',
 ];

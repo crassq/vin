@@ -1,50 +1,57 @@
-## Simple VIN decoder for PHP 7.1+ based on ISO-3779
+# Vin
 
-[![Gitter](https://badges.gitter.im/crassq/support.png)](https://gitter.im/crassq/support)
-[![Build Status](https://circleci.com/gh/crassq/vin.svg?style=shield)](https://circleci.com/gh/crassq/vin)
-[![Code Coverage](https://scrutinizer-ci.com/g/crassq/vin/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/crassq/vin/?branch=master)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/crassq/vin/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/crassq/vin/?branch=master)
-[![Total Downloads](https://img.shields.io/packagist/dt/crassq/vin.svg?label=downloads)](https://packagist.org/packages/crassq/vin)
-[![Latest Stable Version](https://img.shields.io/packagist/v/crassq/vin.svg?label=version)](https://packagist.org/packages/crassq/vin)
-[![License](https://img.shields.io/packagist/l/crassq/vin.svg?label=license)](https://packagist.org/packages/crassq/vin)
+[![Latest Version on Packagist][ico-version]][link-packagist]
+[![Total Downloads][ico-downloads]][link-downloads]
+[![Build Status][ico-travis]][link-travis]
+[![StyleCI][ico-styleci]][link-styleci]
+
+This is where your description should go. Take a look at [contributing.md](contributing.md) to see a to do list.
 
 ## Installation
+
+Via Composer
 
 ```bash
 composer require crassq/vin
 ```
 
-## How to use?
+## Usage
 
-```php
-use InvalidArgumentException;
-use CRASSQ\Vin\Vin;
+## Change log
 
-try {
-    $vin = new Vin('WVWZZZ1KZ6W612305');
-} catch (InvalidArgumentException $e) {
-    // It isn't a valid VIN...
-}
+Please see the [changelog](changelog.md) for more information on what has changed recently.
 
-$vin->getVin(); // "WVWZZZ1KZ6W612305"
-$vin->getWmi(); // "WVW"
-$vin->getVds(); // "ZZZ1KZ"
-$vin->getVis(); // "6W612305"
-$vin->getRegion(); // "Europe"
-$vin->getCountry(); // "Germany"
-$vin->getManufacturer(); // "Volkswagen"
-$vin->getModelYear(); // [2006]
+## Testing
 
-// convert the VIN to a string
-(string) $vin;
-
-// converts the VIN to array
-$vin->toArray();
+```bash
+composer test
 ```
 
-## Useful links
+## Contributing
 
-* https://en.wikipedia.org/wiki/Vehicle_identification_number
-* https://en.wikibooks.org/wiki/Vehicle_Identification_Numbers_(VIN_codes)
-* https://en.wikibooks.org/wiki/Vehicle_Identification_Numbers_(VIN_codes)/World_Manufacturer_Identifier_(WMI)
-* https://en.wikibooks.org/wiki/Vehicle_Identification_Numbers_(VIN_codes)/Model_year
+Please see [contributing.md](contributing.md) for details and a todolist.
+
+## Security
+
+If you discover any security related issues, please email richard.simard@groupesti.com instead of using the issue tracker.
+
+## Credits
+
+- [Richard Simard][link-author]
+- [All Contributors][link-contributors]
+
+## License
+
+MIT. Please see the [license file](LICENSE.md) for more information.
+
+[ico-version]: https://img.shields.io/packagist/v/crassq/vin.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/crassq/vin.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/crassq/vin/master.svg?style=flat-square
+[ico-styleci]: https://styleci.io/repos/12345678/shield
+
+[link-packagist]: https://packagist.org/packages/crassq/vin
+[link-downloads]: https://packagist.org/packages/crassq/vin
+[link-travis]: https://travis-ci.org/crassq/vin
+[link-styleci]: https://styleci.io/repos/12345678
+[link-author]: https://github.com/crassq
+[link-contributors]: ../../contributors

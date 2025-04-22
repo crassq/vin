@@ -1,13 +1,6 @@
-<?php declare(strict_types=1);
+<?php
 
-/**
- * @author Richard Simard <richard.simard@crassq.ca>
- * @copyright Copyright (c) 2025 CRASSQ
- * @license https://github.com/crassq/vin/blob/master/LICENSE
- * @link https://github.com/crassq/vin
- */
-
-namespace CRASSQ\Vin;
+namespace CRASSQ\vin;
 
 /**
  * List of all model years

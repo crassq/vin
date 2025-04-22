@@ -1,11 +1,4 @@
-<?php declare(strict_types=1);
-
-/**
- * @author Richard Simard <richard.simard@crassq.ca>
- * @copyright Copyright (c) 2025 CRASSQ
- * @license https://github.com/crassq/vin/blob/master/LICENSE
- * @link https://github.com/crassq/vin
- */
+<?php
 
 namespace CRASSQ\Vin;
 
