@@ -1,6 +1,6 @@
 {
     "name": "crassq/vin",
-    "description": ":package_description",
+    "description": "Laravel VIN decoder",
     "license": "MIT",
     "authors": [
         {
