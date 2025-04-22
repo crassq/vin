@@ -1,0 +1,47 @@
+{
+    "name": "crassq/vin",
+    "homepage": "https://github.com/crassq/vin",
+    "description": "VIN decoder for PHP 7.1+ based on ISO-3779",
+    "license": "MIT",
+    "keywords": [
+        "crassq",
+        "vin",
+        "decoder",
+        "iso-3779"
+    ],
+    "authors": [
+        {
+            "name": "Richard Simard",
+            "email": "richard.simard@crassq.ca",
+            "homepage": "https://github.com/fenric"
+        }
+    ],
+    "require": {
+        "php": "^7.1|^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "7.5.20|9.5.0",
+        "crassq/coding-standard": "1.0.0"
+    },
+    "autoload": {
+        "files": [
+            "data/manufacturers.php",
+            "data/regions.php",
+            "data/years.php"
+        ],
+        "psr-4": {
+            "CRASSQ\\Vin\\": "src/"
+        }
+    },
+    "scripts": {
+        "test": [
+            "phpcs",
+            "psalm",
+            "XDEBUG_MODE=coverage phpunit --coverage-text --colors=always"
+        ],
+        "build": [
+            "phpdoc -d src/ -t phpdoc/",
+            "XDEBUG_MODE=coverage phpunit --coverage-html coverage/"
+        ]
+    }
+}
